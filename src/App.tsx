@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { KemetButton, KemetDrawer, KemetIcon } from './WebComponents'; // create a web components file where you store your wrappers
+import { KemetButton, KemetDrawer, KemetIconBootstrap } from 'kemet-ui/react'; 
 
-import 'kemet-ui/dist/styles/kemet.base.scss';
+import 'kemet-ui/styles/kemet.base.scss';
 import './App.css'
 
 function App() {
@@ -13,14 +13,14 @@ function App() {
       <aside slot="navigation">
         <br />
         <button onClick={() => setIsDrawerOpened(false)}>
-          <KemetIcon icon="x-lg" size={24}></KemetIcon>
+          <KemetIconBootstrap icon="x-lg" size={24}></KemetIconBootstrap>
         </button>
         <br /><br />
         <nav>[Your nav here]</nav>
       </aside>
       <section slot="content">
         <button onClick={() => setIsDrawerOpened(true)}>
-          <KemetIcon icon="list" size={24}></KemetIcon>
+          <KemetIconBootstrap icon="list" size={24}></KemetIconBootstrap>
         </button>
         <br /><br />
         <div>
